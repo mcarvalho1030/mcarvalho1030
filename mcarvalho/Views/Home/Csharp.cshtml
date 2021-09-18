@@ -1,0 +1,24 @@
+﻿@{
+
+    double valorInvestido = 1000;
+    double fatorRendimento = 1.036;
+    int contatorMes = 1;
+    int contadorAno = 1;
+
+
+    for (contadorAno = 1; contadorAno <= 5; contadorAno++)
+    {
+        for (contatorMes = 1; contatorMes <= 12; contatorMes++)
+        {
+            valorInvestido = valorInvestido + valorInvestido * 0.0036;
+            <p>Após  @contatorMes mese(s), você terá R$ @valorInvestido </p>
+        }
+        fatorRendimento += 0.010;
+        <p> Após @contadorAno ano(s), você terá R$ @valorInvestido </p>
+    }
+}
+
+
+
+<h1>O valor total investido durante 4 anos é de R$  @valorInvestido! </h1>
+
