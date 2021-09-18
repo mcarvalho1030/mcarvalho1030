@@ -28,10 +28,16 @@ namespace mcarvalho.Controllers
             return View();
         }
 
-        public IActionResult Teste()
+        public IActionResult Csharp()
         {
             return View();
         }
+
+        public IActionResult POO()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
